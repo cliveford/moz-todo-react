@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  const subject = 'React';
+function App(props) {
+  const subject = props.subject;
   return (
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <p>Test to see if I need to re-build {subject}</p>
+        <p>Hello {subject}</p>
       </header>
     </div>
   );
